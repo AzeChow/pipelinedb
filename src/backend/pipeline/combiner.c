@@ -1869,7 +1869,7 @@ ContinuousQueryCombinerMain(void)
 					state->pending_tuples += count;
 					total_pending += count;
 
-					combine(state, false);
+					combine(state, true);
 
 					if (!first_seen)
 						first_seen = GetCurrentTimestamp();
